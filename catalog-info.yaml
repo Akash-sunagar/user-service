@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: user-service
+  description: Backend service for managing users
+  annotations:
+    github.com/project-slug: Akash-sunagar/user-service
+spec:
+  type: service
+  owner: devops-team
+  lifecycle: development
+  providesApis:
+    - user-api

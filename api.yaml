@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: user-api
+  description: API for user service
+spec:
+  type: openapi
+  lifecycle: development
+  owner: devops-team
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: User API
+      version: 1.0.0
+    paths:
+      /users:
+        get:
+          summary: Get users
+          responses:
+            '200':
+              description: Success
