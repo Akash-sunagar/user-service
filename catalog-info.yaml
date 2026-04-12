@@ -5,10 +5,10 @@ metadata:
   description: Backend service for managing users
   annotations:
     github.com/project-slug: Akash-sunagar/user-service
-    backstage.io/techdocs-ref: dir: .
+    backstage.io/techdocs-ref: "dir:."
 spec:
   type: service
   owner: user:guest
   lifecycle: development
   providesApis:
-    - api:user-apis
+    - api:user-api
