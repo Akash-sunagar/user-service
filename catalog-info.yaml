@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: user-service
-  description: Backend service for managing users
+  description: Backend service for managing akash&users
   annotations:
     github.com/project-slug: Akash-sunagar/user-service
     backstage.io/techdocs-ref: "dir:."
