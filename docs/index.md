@@ -1,14 +1,6 @@
 # User Service
 
-This is a backend service for managing users.
+Hello World demo documentation.
 
-## API
-
-GET /users
-
-Returns list of users.
-
-## Tech Stack
-
-- Node.js
-- Express
+## Overview
+This is a backend service for user management.
