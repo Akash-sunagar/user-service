@@ -5,7 +5,7 @@ metadata:
   name: smart-serverless
   description: Backend service for managing users
   annotations:
-    github.com/project-slug: Akash-sunagar/smart-serverless
+    github.com/project-slug: Akash-sunagar/user-service
     backstage.io/techdocs-ref: dir:.
     github.com/workflows: CI
 
