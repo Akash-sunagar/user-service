@@ -1,11 +1,14 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
+
 metadata:
-  name: user-service
-  description: Backend service for managing akash&varun&rohit&users
+  name: smart-serverless
+  description: Backend service for managing users
   annotations:
-    github.com/project-slug: Akash-sunagar/user-service
-    backstage.io/techdocs-ref: "dir:."
+    github.com/project-slug: Akash-sunagar/smart-serverless
+    backstage.io/techdocs-ref: dir:.
+    github.com/workflows: CI
+
 spec:
   type: service
   owner: devops-team
