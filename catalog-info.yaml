@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: cloud-web-app
-  description: Cloud web application with Docker build pipeline
+  name: user-service
+  description: Backend service for managing users
   annotations:
     github.com/project-slug: Akash-sunagar/cloud-web-app
     backstage.io/techdocs-ref: dir:.
 spec:
-  type: website
+  type: service
   owner: devops-team
-  lifecycle: production
+  lifecycle: development
