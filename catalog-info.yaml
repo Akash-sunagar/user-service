@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: user-service
-  description: Backend service for managing users
+  name: cloud-web-app
+  description: Cloud web application with Docker build pipeline
   annotations:
-    github.com/project-slug: Akash-sunagar/smart-serverless
+    github.com/project-slug: Akash-sunagar/cloud-web-app
     backstage.io/techdocs-ref: dir:.
 spec:
-  type: service
+  type: website
   owner: devops-team
-  lifecycle: development
+  lifecycle: production
