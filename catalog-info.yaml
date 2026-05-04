@@ -5,8 +5,78 @@ metadata:
   description: Backend service for managing users
   annotations:
     github.com/project-slug: Akash-sunagar/user-service
-    backstage.io/techdocs-ref: dir:.
 spec:
   type: service
-  owner: devops-team
-  lifecycle: development
+  lifecycle: production
+  owner: team-a
+  providesApis:
+    - user-api
+  consumesApis:
+    - auth-api
+  dependsOn:
+    - component:auth-service
+    - resource:user-db
+  subcomponentOf: backend-system
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: user-api
+spec:
+  type: openapi
+  lifecycle: production
+  owner: team-a
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: User API
+      version: 1.0.0
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: auth-api
+spec:
+  type: openapi
+  lifecycle: production
+  owner: team-a
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: Auth API
+      version: 1.0.0
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: user-db
+spec:
+  type: database
+  owner: team-a
+  lifecycle: production
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: auth-service
+spec:
+  type: service
+  owner: team-a
+  lifecycle: production
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: backend-system
+spec:
+  owner: team-a
