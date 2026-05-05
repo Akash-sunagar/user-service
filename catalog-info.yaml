@@ -83,7 +83,8 @@ spec:
 
   ---
 
-  kind: Component
+apiVersion: backstage.io/v1alpha1
+kind: Component
 metadata:
   name: user-db-service
 spec:
