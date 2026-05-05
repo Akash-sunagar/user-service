@@ -81,7 +81,7 @@ metadata:
 spec:
   owner: team-a
 
-  ---
+---
 
 apiVersion: backstage.io/v1alpha1
 kind: Component
