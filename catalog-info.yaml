@@ -88,7 +88,7 @@ kind: Component
 metadata:
   name: user-db-service
 spec:
-  type: database
+  type: service
   owner: team-a
   lifecycle: production
   subcomponentOf: user-service
